@@ -1,0 +1,22 @@
+INDEX VERSION 1.131+C:\Users\Rodrigo\Documents\GitHub\ws-sts\.metadata\.plugins\org.eclipse.jdt.core
+952562038.index
+2084363877.index
+3910385588.index
+2975378256.index
+1040075315.index
+1821889464.index
+3527913056.index
+2652343847.index
+1311388581.index
+733865495.index
+1954241943.index
+1436560732.index
+2000800143.index
+3905661699.index
+2807944814.index
+1426173731.index
+964669240.index
+2070869250.index
+234471908.index
+2561832169.index
+3045332388.index
