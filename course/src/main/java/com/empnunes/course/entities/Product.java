@@ -103,7 +103,7 @@ public class Product implements Serializable {
 	
 	@JsonIgnore
 	public Set<Order> getOrders() {
-		Set<Order> set = new HashSet();
+		Set<Order> set = new HashSet<>();
 		for(OrderItem x : items) {
 			set.add(x.getOrder());
 		}
