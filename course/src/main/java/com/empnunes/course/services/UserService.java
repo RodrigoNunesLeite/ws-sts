@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import com.empnunes.course.entities.User;
 import com.empnunes.course.repositories.UserRepository;
+import com.empnunes.course.services.exceptions.ResourceNotFoundException;
 
 // preciso identificar(registrando como um component) minha classe pra ser possivel
 // injeta-lo em outra classe e devolver o resultado em um response
@@ -25,7 +26,8 @@ public class UserService {
 	public User findById(Long id) {
 		// findbyid retorna um optional
 		Optional<User> obj = repository.findById(id);
-		return obj.get();
+		// orElseThrow tentar retornar o get, senão retorna uma exceção
+		return obj.orElseThrow(() -> new ResourceNotFoundException(id));
 	}
 	
 	public User insert(User obj) {
